@@ -4,7 +4,12 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : 어플이 처음 실행된건지 기존에 실행된 기록이 있는지를 put 하는
+    기능을 담당하는 함수. 첫 실행일 시에 mainActivity에서 간단한 튜토리얼이 진행된다.
+------------------------------------------------------------------------------------
+ */
 public class SharedData {
     private final String DB = "db";
 

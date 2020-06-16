@@ -5,7 +5,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : 쿼리문의 실행을 담당하며 버전에 대해 upgrade, downgrade 구현.
+    upgrade와 downgrad는 sqliteHelper 관련 자료를 찾다가 첨부한 것일뿐 실제로 사용하
+    지는 않음.
+------------------------------------------------------------------------------------
+ */
 public class DbHelper extends SQLiteOpenHelper {
     public static final int DATABASE_VERSION = 1;
     public static final String DATABASE_NAME = "diary.db";

@@ -3,7 +3,11 @@ package com.nainfox.drawview.database;
 import android.provider.BaseColumns;
 
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : 데이터베이스 데이터와 테이블 생성 및 삭제를 담당하는 클래스
+------------------------------------------------------------------------------------
+ */
 public class Database {
     private  Database() {}
 

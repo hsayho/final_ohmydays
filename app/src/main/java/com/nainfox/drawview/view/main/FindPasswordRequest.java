@@ -7,6 +7,13 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : 회원 Password를 찾기위한 함수. php파일에 parameter값으로
+    userName과 userID를 보낸다.
+------------------------------------------------------------------------------------
+
+ */
 public class FindPasswordRequest extends StringRequest {
     final static private String URL ="http://seho4815.dothome.co.kr/findpass.php";
     private Map<String, String> parameters;

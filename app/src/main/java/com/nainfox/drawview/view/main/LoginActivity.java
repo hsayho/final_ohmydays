@@ -16,6 +16,12 @@ import com.nainfox.drawview.R;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+------------------------------------------------------------------------------------
+    Created by 양석진, 황세호 : 로그인을 하기 위한 함수.
+    서버와 통신을 위해 volley를 사용하였다.
+------------------------------------------------------------------------------------
+ */
 public class LoginActivity extends AppCompatActivity {
 
     private EditText et_id, et_password;

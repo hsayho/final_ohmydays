@@ -12,7 +12,12 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : canvas를 사용해 그린 이미지를 bitmap, bitmap 형식에서 biteArray,
+    biteArray 형식을 File형으로 변환하는 기능을 담당.
+------------------------------------------------------------------------------------
+ */
 public class BitmapHelper {
     private final String TAG = "## BitmapHelper";
 

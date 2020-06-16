@@ -14,9 +14,7 @@ import java.util.List;
 
 public class DrawHelper {
 
-    /**
-     * Function used to check whenever a list of points is a line or a path to draw
-     */
+
     public static boolean isAPoint(@NonNull List<Point> points) {
         if (points.size() == 0)
             return false;

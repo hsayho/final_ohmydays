@@ -16,7 +16,12 @@ import com.nainfox.drawview.R;
 import com.nainfox.drawview.database.Database;
 
 import org.json.JSONObject;
-
+/**
+------------------------------------------------------------------------------------
+    Created by 양석진, 황세호 : 회원정보 찾기를 위한 함수.
+    php와 서버 통신을 위해 volley를 사용.
+------------------------------------------------------------------------------------
+ */
 public class FindActivity extends AppCompatActivity {
     private EditText et_name, et_email, et_id, et_name2;
     private Button btn_findid, btn_findpass;

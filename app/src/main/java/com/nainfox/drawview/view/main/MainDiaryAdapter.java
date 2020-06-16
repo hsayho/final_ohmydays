@@ -24,7 +24,13 @@ import java.io.ByteArrayOutputStream;
 import java.util.ArrayList;
 
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : Recyclerview에서 모든 데이터를 목록에 피드하기 위한 Adaper
+    클래스 구현. 콘텐츠를 표시하기위해 뷰홀더 객체를 사용하였으며 레이아웃 관리자를
+    통해 데이터에 바인딩.
+------------------------------------------------------------------------------------
+ */
 public class MainDiaryAdapter extends RecyclerView.Adapter<MainDiaryAdapter.ViewHolder> {
     private final String TAG = "### MainDiaryAdapter";
     private final int SHARE_RESULT_CODE = 13;

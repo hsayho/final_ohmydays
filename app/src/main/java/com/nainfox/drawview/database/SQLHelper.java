@@ -7,7 +7,13 @@ import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 
-
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : SQLHelper로써 DB에 Contentvalue를 사용하여 삽입하는 기능이 있
+    으며 SQLite 기능인 Cursor로 데이터를 불러옴.
+    일기장은 회원 별로 다르게 불러와야 하므로 select 쿼리문을 사용하였음.
+------------------------------------------------------------------------------------
+ */
 public class SQLHelper {
     private final String TAG = "### SQLHelper";
     private DbHelper dbHelper;

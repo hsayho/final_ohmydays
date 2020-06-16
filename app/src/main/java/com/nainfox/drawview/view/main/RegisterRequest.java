@@ -7,6 +7,12 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+------------------------------------------------------------------------------------
+    Created by 황세호 : 회원가입을 요청하는 함수.
+    php파일로 parameter 값으로 userID, userPassword, userName, userEmail을 보낸다.
+------------------------------------------------------------------------------------
+ */
 public class RegisterRequest extends StringRequest {
 
     // 서버 URL 설정(PHP 파일 연동)

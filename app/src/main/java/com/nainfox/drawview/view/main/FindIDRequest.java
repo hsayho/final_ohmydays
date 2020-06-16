@@ -7,6 +7,10 @@ import com.android.volley.toolbox.StringRequest;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+    Created by 황세호 : 회원 ID를 찾을 때 php파일에 parameter 값을 전달하기 위한 함수.
+    php파일에 parameter 값으로 userName과 userEmail을 보낸다.
+ */
 public class FindIDRequest extends StringRequest {
     final static private String URL ="http://seho4815.dothome.co.kr/findid.php";
     private Map<String, String> parameters;

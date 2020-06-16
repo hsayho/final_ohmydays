@@ -23,6 +23,10 @@ import com.nainfox.drawview.database.SQLHelper;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+/**
+    Created by 양석진, 황세호 : 회원가입을 하기위한 함수이다.
+    서버와 통신을 위해 volley를 사용하였다.
+ */
 public class RegisterActivity extends AppCompatActivity { // 액티비티 시작시 처음으로 실행되는 생명주기!
     private EditText et_id, et_password, et_name, et_email;
     private Button btn_register, btn_idcheck;
