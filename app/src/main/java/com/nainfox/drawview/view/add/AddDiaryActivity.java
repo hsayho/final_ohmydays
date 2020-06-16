@@ -628,7 +628,7 @@ public class AddDiaryActivity extends BasicActivity implements PathRedoUndoCount
         requestQueue.add(stringRequest);
         */
 
-                                   // 마지막 시도
+        /*
         StringRequest stringRequest = new StringRequest(Request.Method.POST, urlUpload, new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
@@ -658,7 +658,7 @@ public class AddDiaryActivity extends BasicActivity implements PathRedoUndoCount
             }
         };
         MySingleton.getmInstance(AddDiaryActivity.this).addToRequestQue(stringRequest);
-
+        */
         /*dialog = ProgressDialog.show(AddDiaryActivity.this, "", "Uploading file...", true);
         upLoadServerUri = "http://seho4815.dothome.co.kr/UploadToServer.php";
         uploadFile(uploadFilePath + "/" + uploadFileName);
@@ -667,7 +667,7 @@ public class AddDiaryActivity extends BasicActivity implements PathRedoUndoCount
         try {
 
             SQLHelper sqlHelper = new SQLHelper(this);
-            long result = sqlHelper.INSERT(time, weather, url, all_url, diarycontent);
+            long result = sqlHelper.INSERT(time, weather, url, all_url, diarycontent, userID);
             if(result < 0){
                 Toast.makeText(this, "저장에 실패했습니다. 다시 시도해주세요.", Toast.LENGTH_SHORT).show();
             }

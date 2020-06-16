@@ -41,6 +41,7 @@ public class MainDiaryAdapter extends RecyclerView.Adapter<MainDiaryAdapter.View
     private ArrayList<String> titles;
     private ArrayList<String> writes;
     private ArrayList<String> weathers;
+    private ArrayList<String> userIDs;
 
 
 
@@ -57,7 +58,7 @@ public class MainDiaryAdapter extends RecyclerView.Adapter<MainDiaryAdapter.View
         }
     }
 
-    public MainDiaryAdapter(Activity context, ArrayList<Integer> ids, ArrayList<byte[]> all_urls, ArrayList<byte[]> urls, ArrayList<String> titles, ArrayList<String> times, ArrayList<String> writes, ArrayList<String> weathers){
+    public MainDiaryAdapter(Activity context, ArrayList<Integer> ids, ArrayList<byte[]> all_urls, ArrayList<byte[]> urls, ArrayList<String> titles, ArrayList<String> times, ArrayList<String> writes, ArrayList<String> weathers, ArrayList<String> userIDs){
         this.context = context;
         this.ids = ids;
         this.all_urls = all_urls;
@@ -66,6 +67,7 @@ public class MainDiaryAdapter extends RecyclerView.Adapter<MainDiaryAdapter.View
         this.titles = titles;
         this.writes = writes;
         this.weathers = weathers;
+        this.userIDs = userIDs;
 
     }
 
@@ -96,6 +98,7 @@ public class MainDiaryAdapter extends RecyclerView.Adapter<MainDiaryAdapter.View
                     intent.putExtra("time",times.get(position));
                     intent.putExtra("write",writes.get(position));
                     intent.putExtra("weather",weathers.get(position));
+                    intent.putExtra("userID", userIDs.get(position));
                     context.startActivityForResult(intent, SHARE_RESULT_CODE);
                 }
             });

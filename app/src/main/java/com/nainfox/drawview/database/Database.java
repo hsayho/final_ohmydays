@@ -42,6 +42,7 @@ public class Database {
                     Entry.URL + BLOB_TYPE + COMMA_SEP +
                     Entry.ALL_URL + BLOB_TYPE + COMMA_SEP +
                     Entry.WRITE + TEXT_TYPE + COMMA_SEP +
+                    Entry.userID + TEXT_TYPE +
                     ");";
 
     public static final String SQL_DELETE_ENTRIES =

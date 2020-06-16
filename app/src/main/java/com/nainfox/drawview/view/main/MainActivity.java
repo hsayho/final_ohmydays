@@ -59,7 +59,7 @@ public class MainActivity extends BasicActivity{
     private ArrayList<String> weathers;
     private ArrayList<String> userIDs;
 
-    String userID;
+    String userID=null;
     private ImageView addButton;
 
     private LinearLayout mainView;
@@ -124,7 +124,7 @@ public class MainActivity extends BasicActivity{
         //Log.d(TAG, "all_urls size : " + all_urls.size());
 //        mRecyclerView.setHasFixedSize(true);
 
-        mAdapter = new MainDiaryAdapter(this, ids, all_urls, urls, titles, times, writes, weathers); // this를 통해 연재 콘텐츠 결정
+        mAdapter = new MainDiaryAdapter(this, ids, all_urls, urls, titles, times, writes, weathers, userIDs); // this를 통해 연재 콘텐츠 결정
         mRecyclerView.setAdapter(mAdapter);
         mRecyclerView.setVisibility(View.VISIBLE);
         mRecyclerView.invalidate(); // 화면 초기화
@@ -163,7 +163,8 @@ public class MainActivity extends BasicActivity{
             removeList();
 
             SQLHelper sqlHelper = new SQLHelper(this); // 화면에 표시될 DB를 불러옴.
-            Cursor cursor = sqlHelper.SELECTALL();
+            Cursor cursor = sqlHelper.SELECTALL(userID);
+            //Cursor cursor = sqlHelper.SELECTALL();
 
             Log.d(TAG, "cursor size : " + cursor.getCount());
             size = cursor.getCount(); // 데이터 테이블 행의 열들의 갯수가 없을때
@@ -199,7 +200,7 @@ public class MainActivity extends BasicActivity{
         byte[] url = cursor.getBlob(cursor.getColumnIndex(Database.Entry.URL));
         byte[] all_url = cursor.getBlob(cursor.getColumnIndex(Database.Entry.ALL_URL));
         String write = cursor.getString(cursor.getColumnIndex(Database.Entry.WRITE));
-
+        String userID = cursor.getString(cursor.getColumnIndex(Database.Entry.userID));
         String title = getTitle(write);
 
         ids.add(_id);
@@ -209,6 +210,8 @@ public class MainActivity extends BasicActivity{
         titles.add(title);
         writes.add(write);
         weathers.add(weather);
+        userIDs.add(userID);
+
     }
 
     private String getTitle(String write){
