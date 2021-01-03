@@ -1,4 +1,4 @@
-OhMyDays(오마이 데이즈)
+# OhMyDays(오마이 데이즈)
 
 
     ▷ 개발 목적 : 현대인에게 힐링의 시간을 제공하고 자신의 하루를 돌아볼 수 있는 그림 일기 앱
@@ -24,8 +24,13 @@ OhMyDays(오마이 데이즈)
 
 
 ScreenShots
-
-
+-------------
+<div>
+	<img width="200" src="https://user-images.githubusercontent.com/55680343/103472145-479c6b80-4dcd-11eb-944a-bceb7f6d7225.png" />
+	<img width="200" src="https://user-images.githubusercontent.com/55680343/103472148-4ec37980-4dcd-11eb-95b2-9dd10243cc79.png" />
+	<img width="200" src="https://user-images.githubusercontent.com/55680343/103472155-597e0e80-4dcd-11eb-82e5-dba4e89b0a4a.png" />
+	<img width="200" src="https://user-images.githubusercontent.com/55680343/103472156-5b47d200-4dcd-11eb-9231-ca93735873b0.png" />
+</div>
 
 
 
